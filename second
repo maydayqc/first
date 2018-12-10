@@ -1,1 +1,16 @@
-secondFile
+
+<div class="control-group">
+<iframe scrolling="no" allowtransparency="true" id="iframexxb"
+	onload="this.className='';changeHeightOnLoad();" class="" frameborder="0" 
+	src="${ctx}/commonPurchaseApplication/commonPurchaseApplication/form?id=${commonPurchaseApplicationAudit.purchaseId}&type=view" style="min-height:388px;width:100%"></iframe>
+<script type="text/javascript">
+function changeHeightOnLoad(){
+	var ifm= document.getElementById("iframexxb");
+	var subWeb = document.frames ? document.frames["iframexxb"].document : ifm.contentDocument;
+	if(ifm != null && subWeb != null) {
+		  ifm.height = subWeb.body.scrollHeight;
+	}
+}
+</script>
+
+</div>
